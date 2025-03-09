@@ -8,9 +8,11 @@ namespace todoApp.Models
 {
     internal class TodoModel
     {
+		private bool _isDone;
+		private string _text;
+
         public DateTime CreationDate { get; set; } = DateTime.Now;
 
-		private bool _isDone;
 
 		public bool isDone
 		{
@@ -18,7 +20,6 @@ namespace todoApp.Models
 			set { _isDone = value; }
 		}
 
-		private string _text;
 
 		public string Text
 		{
